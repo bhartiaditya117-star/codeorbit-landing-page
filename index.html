@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexaFlow helps teams organize projects, manage tasks and work smarter.">
+  <title>NexaFlow — Work Smarter, Together</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">Nexa<span>Flow</span></a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="nav-links">☰</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="nav-cta" href="#get-started">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <span class="announcement">✦ YOUR TEAM'S NEW WORKSPACE</span>
+        <h1>Less busywork.<br>More <span>brilliant work.</span></h1>
+        <p>
+          Bring your projects, tasks and team conversations together
+          in one simple workspace. Spend less time organizing and more
+          time making progress.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#get-started">Explore NexaFlow ↗</a>
+          <a class="btn btn-secondary" href="#features">Discover features</a>
+        </div>
+        <div class="trust-note">
+          <span class="online-dot"></span>
+          Designed for focused, productive teams
+        </div>
+      </div>
+
+      <div class="dashboard" aria-label="Illustration of a project management dashboard">
+        <div class="dash-top">
+          <div>
+            <span class="dash-label">WORKSPACE / OVERVIEW</span>
+            <h2>Team dashboard</h2>
+          </div>
+          <span class="dash-avatar">NF</span>
+        </div>
+
+        <div class="progress-card">
+          <div class="progress-heading">
+            <span>Website redesign</span>
+            <strong>75%</strong>
+          </div>
+          <div class="progress-track">
+            <div class="progress-value"></div>
+          </div>
+          <small>12 of 16 tasks completed</small>
+        </div>
+
+        <div class="task-heading">
+          <h3>Today's priorities</h3>
+          <span>3 tasks</span>
+        </div>
+
+        <div class="task-row">
+          <span class="task-check checked">✓</span>
+          <span class="task-name completed">Research user needs</span>
+          <span class="task-tag green">Done</span>
+        </div>
+        <div class="task-row">
+          <span class="task-check">2</span>
+          <span class="task-name">Design landing page</span>
+          <span class="task-tag purple">Design</span>
+        </div>
+        <div class="task-row">
+          <span class="task-check">3</span>
+          <span class="task-name">Review team feedback</span>
+          <span class="task-tag orange">Review</span>
+        </div>
+
+        <div class="dash-footer">
+          <span class="online-dot"></span> Your team is making progress
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-inner">
+        <p>ONE WORKSPACE. MORE POSSIBILITIES.</p>
+        <div class="benefit-items">
+          <span>✓ Clear priorities</span>
+          <span>✓ Connected teams</span>
+          <span>✓ Organized projects</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-heading">
+        <span class="eyebrow">BUILT FOR BETTER WORK</span>
+        <h2>Everything your team needs<br>to move forward.</h2>
+        <p>Simple tools that help turn scattered tasks into meaningful progress.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon mint">▦</div>
+          <h3>Project planning</h3>
+          <p>Organize projects, define milestones and see what's coming next.</p>
+          <a href="#get-started">Plan smarter ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon violet">✓</div>
+          <h3>Task management</h3>
+          <p>Keep priorities clear and track tasks from start to completion.</p>
+          <a href="#get-started">Stay organized ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon peach">◎</div>
+          <h3>Team collaboration</h3>
+          <p>Keep everyone aligned with a shared view of work and progress.</p>
+          <a href="#get-started">Work together ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-content">
+        <div>
+          <span class="eyebrow">LESS CHAOS, MORE CLARITY</span>
+          <h2>Make room for<br>your best ideas.</h2>
+        </div>
+        <p>
+          Great work happens when people know what matters.
+          NexaFlow is a fictional productivity product concept designed
+          to demonstrate a clean, responsive landing page experience.
+        </p>
+      </div>
+    </section>
+
+    <section class="get-started container" id="get-started">
+      <div class="cta-card">
+        <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+        <h2>Ready to work<br>with more clarity?</h2>
+        <p>Explore a better way to organize your team's work.</p>
+        <button class="btn btn-primary" id="start-button">
+          Get Started Today ↗
+        </button>
+        <p class="cta-message" id="cta-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Nexa<span>Flow</span></a>
+      <p>© <span id="year"></span> NexaFlow. Internship project demo.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
